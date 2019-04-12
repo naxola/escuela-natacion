@@ -1,0 +1,5 @@
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^natacionjesusfranco.es$ [NC,OR]
+RewriteCond %{HTTP_HOST} ^www.natacionjesusfranco.es$
+RewriteCond %{REQUEST_URI} !web-natacion/
+RewriteRule (.*) /web-natacion/$1 [L]
